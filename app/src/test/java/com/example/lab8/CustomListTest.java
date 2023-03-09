@@ -35,6 +35,7 @@ public class CustomListTest {
         list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(),listSize + 1);
     }
+    @Test
     void testDelete() {
         CustomList list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
