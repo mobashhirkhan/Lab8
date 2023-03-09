@@ -39,9 +39,10 @@ public class CustomListTest {
     void testDelete() {
         CustomList list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
+        int listSize = list.getCount();
         list.add(city);
         list.delete(city);
-        assertEquals(1, list.getCount());
+        assertEquals(list.getCount(),listSize);
         assertFalse(list.hasCity(city));
         //assertFalse(list.getCities().contains(city));
     }
