@@ -50,6 +50,6 @@ public class CustomListTest {
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
         list.addCity(city);
-        assertFalse(list.hasCity(city));
+        assertTrue(list.hasCity(city));
     }
 }
